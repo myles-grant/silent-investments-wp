@@ -1,0 +1,905 @@
+/*
+Theme Name: Silent Investments
+Theme URI: http://www.silentinvestments.com
+Description: This is silent investments's theme
+Author: FirstLast Inc.
+Author URI: http://www.firstlast.com
+Version: 1
+
+*/
+
+
+
+
+@charset "utf-8";
+/* CSS Document */
+
+body
+{
+	margin: 0;
+	overflow-x: hidden;
+	background: #fff;
+	font: 14px/21px  'Roboto Condensed', "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #444;
+	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+	-webkit-text-size-adjust: 100%;
+}
+
+/* Form Validation */
+.remove_signup, .ok_signup, .remove_footer, .ok_footer, .remove_login, .ok_login, .remove_sidebar, .ok_sidebar 
+{
+	color: transparent !important;
+}
+
+.formm span
+{
+	top: 0;
+}
+
+.formm span.remove_footer, .formm span.ok_footer
+{
+	color: rgb(106,107,109);
+}
+
+.form_error
+{
+	display: none;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #F00 !important;
+	font-size: 12px !important;
+}
+
+
+
+/*-------------------  nav/header/banner/slideshow Section ------------------*/
+#main_nav
+{
+	background-color: white;
+	height:66px;
+}
+
+.si-logo{
+	float:left;
+	margin:5px 0 0 0;
+}
+
+/* hover over override */
+
+#main_nav a{
+	font-size: 15px;
+	text-transform: uppercase;
+	color: rgba(0, 21, 58, 1);
+	-webkit-transition: all 0.7s;
+	-o-transition: all 0.7s;
+	transition: all 0.7s;
+}
+
+#main_nav a:hover
+{
+	border-radius: 0;
+	background-color: transparent;
+	color: rgba(62,169,224,1);
+}
+
+#main_nav a.active{
+	color: rgba(62,169,224,1);
+}
+
+
+#main_nav div ul li span a
+{
+	padding: 0;
+}
+
+#wp_nav div ul li
+{
+	float: left;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+#wp_nav div ul
+{
+	margin-bottom: 0;
+}
+
+.pad0
+{
+	padding: 10px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+#main_nav div.container ul li 
+{
+	border-right: rgb(238,238,234) thin solid;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	line-height:1.7;
+}
+
+#login
+{
+	border-right: none;
+	border-bottom-right-radius: 0;
+	border-top-right-radius: 0;
+	color: white;
+	background-color: rgb(63,174,232);
+}
+
+#signup
+{
+	border-left: none;
+	border-bottom-left-radius: 0;
+	border-top-left-radius: 0;
+	color: white;
+	background-color: rgb(0,23,68);
+}
+
+
+#blue
+{
+	background-color: rgb(0,21,60);
+	color: white;
+	text-align: center;
+	padding:5px 0;
+}
+
+#blue h1::after{
+	content:url(images/arrow-right.png);
+	width:37px;
+	height:37px;
+	display:inline-block;
+	vertical-align:-7px;
+	margin: 0 0 0 10px;
+}
+
+#blue h1
+{
+	margin-top: 21px;
+	margin-bottom: 0;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 26px;
+    letter-spacing:1px;
+}
+
+
+#light_blue
+{
+	background-color: rgb(57,99,145);
+	color: white;
+	text-align: center;
+}
+#light_blue h1
+{
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-size: 28px;
+	font-weight:100;
+}
+
+#light_blue h1 strong{
+	font-weight:bold;
+}
+
+#light_blue h1::after{
+	content:url(images/youtube-icon.png);
+	width:91px;
+	height:38px;
+	display:inline-block;
+	vertical-align:-10px;
+	margin: 0 0 0 10px;
+}
+
+.jumbotron
+{
+	margin-bottom: 0;
+}
+
+section.jumbotron{
+	background:url(images/jumbotron_1.jpg) no-repeat center center;
+	color:rgba(255,255,255,1.00);
+	background-size:cover;
+	height:590px;
+}
+
+.jumbotron .video-wrapper{
+	 background-color:rgb(194,194,194); 
+	 width:560px; height:315px;
+	 margin:100px 0 0 0; 
+	 opacity:0.7;  
+	 cursor:pointer;
+	 background-image: -webkit-gradient(linear, center top, center bottom, from(rgba(255,255,255,0.5)), to(rgba(202,201,201,0.5) 1%));
+background-image: -webkit-linear-gradient(top, rgba(255,255,255,0.5), rgba(202,201,201,0.5) 1%);
+background-image: -moz-linear-gradient(top, rgba(255,255,255,0.5), rgba(202,201,201,0.5) 1%);
+background-image: -o-linear-gradient(top, rgba(255,255,255,0.5), rgba(202,201,201,0.5) 1%);
+background-image: -ms-linear-gradient(top, rgba(255,255,255,0.5), rgba(202,201,201,0.5) 1%);
+background-image: linear-gradient(to bottom, rgba(255,255,255,0.5), rgba(202,201,201,0.5) 1%);
+-webkit-box-shadow: inset 0 1px 2px black;
+-moz-box-shadow: inset 0 1px 2px black;
+box-shadow: inset 0 1px 2px black;
+
+}
+
+ul.checklist{
+	 margin:150px 0 0 30px;
+	 font-size:20px;
+	 line-height:1.5; 
+}
+
+#slide_show{
+	height:400px;
+	background-color:#36608d;
+	color:rgba(255,255,255,1.00);
+}
+
+.slide_promo_h{
+	text-align:center;
+	margin:0 auto;
+}
+
+.slide_promo_h h1{
+	background-color:#294e7a;
+	margin:0 0 0 0;
+	padding:20px 0;
+	font-family: 'Gentium Basic', serif;
+	font-style:italic;
+	letter-spacing:1px;
+}
+
+.slide_promo_h h2{
+	display:block;
+	font-size:14px;
+	font-weight:100;
+	letter-spacing:1px;
+	width:200px;
+	margin:0 auto;
+	border-left: 200px solid transparent;
+	border-right: 200px solid transparent;
+	border-top: 30px solid #294e7a;
+	vertical-align:text-top; 
+}
+
+.slide_promo_h .slide_promo_icon{
+	display:block;
+	width:130px;
+	height:130px;
+	margin:0 auto 10px auto;
+	border:3px solid rgba(255,255,255,1.00);
+	border-radius:130px
+}
+
+#left_arrow
+{
+	background-color: rgb(129,150,163);
+	background-image: none;
+	width: 50px;
+	opacity: 0.5;
+}
+#left_arrow:hover
+{
+	
+}
+
+#left_arrow div
+{
+	position: absolute;
+	top: 50%;
+	margin-left: 20px;
+	background-color: rgb(129,150,163);
+	width: 50px;
+	height: 50px;
+	border: rgb(122,143,158) thin solid;
+	border-radius: 50%;
+	opacity: 0.9;
+	z-index: 3;
+}
+
+
+
+#right_arrow
+{
+	background-color: rgb(129,150,163);
+	background-image: none;
+	width: 50px;
+	opacity: 0.5;
+}
+#right_arrow div
+{
+	position: absolute;
+	top: 50%;
+	margin-left: -20px;
+	background-color: rgb(129,150,163);
+	width: 50px;
+	height: 50px;
+	border: rgb(122,143,158) thin solid;
+	border-radius: 50%;
+	opacity: 0.9;
+	z-index: 3;
+}
+
+
+
+
+/*-------------------  Updates Section ------------------*/
+
+#header_updates
+{
+	border-bottom: rgb(199,199,199) solid medium;
+	text-align: center;
+}
+#header_updates h1
+{
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	font-size: 26px;
+}
+
+
+
+#latest_trades_header
+{
+	background-color: rgb(0,21,60);
+	color: white;
+	padding: 10px;
+}
+
+
+#latest_trades
+{
+	display: table;
+	background-color: rgb(228,238,242);
+	border: rgb(201,201,201) solid thin;
+	text-align: center;
+	padding: 0;
+}
+
+#latest_trades_table
+{
+	display: inline-table;
+	margin: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#latest_trades_table, th, td
+{
+	background-color: white;
+	border: rgb(175,197,206) thin solid;
+	border-collapse: collapse;
+	padding: 20px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+#latest_trades_table, th
+{
+	background-color: rgb(244,245,249);
+}
+
+
+#block2_header
+{
+	background-color: rgb(54,97,141);
+	color: white;
+	padding: 10px;
+}
+
+#block2
+{
+	margin-top: 25px;
+	padding: 0;
+	border: rgb(201,201,201) solid thin;
+}
+
+
+.challenge_blocks
+{
+	ddisplay: table;
+	margin-top: 35px;
+	padding: 20px;
+	padding-left: 0;
+	background-color: rgb(228,238,242);
+	border: rgb(201,201,201) solid thin;
+}
+.challenge_blocks span
+{
+	padding: 20px;
+}
+
+
+
+
+/* ------------------ Trading Section -------------------------*/
+
+#section_container
+{
+	background-color: rgb(94,127,161); /*-- TEMP --*/
+	text-align: center;
+	color: white;
+}
+
+#section_container div h1
+{
+	padding: 30px;
+}
+
+#section_container div h1 small
+{
+	color: white;
+}
+
+#section_container div button
+{
+	padding-left: 50px;
+	padding-right: 50px;
+	margin-bottom: 40px;
+}
+
+
+
+/* ------------------ Method Section -------------------------*/
+
+
+#method_container
+{
+	margin-top: 20px;
+	text-align: center;
+}
+
+#method_container h1
+{
+	padding: 30px;
+}
+
+#formula
+{
+	margin-top: 50px;
+	margin-bottom: 60px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+#jump_start
+{
+	color: rgb(54,96,141);
+	border: rgb(54,96,141) solid medium;
+	display: table;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#jump_start p
+{
+	padding: 40px;
+	padding-left: 60px;
+	padding-right: 60px;
+	margin-bottom: 0;
+}
+	
+#jump_start button
+{
+	border: rgb(54,96,141) solid medium;
+	border-radius: 0;
+	margin-bottom: -25px;
+}
+
+#jump_start button:hover
+{
+	color: white;
+	background-color: rgb(54,96,141);
+}
+
+
+
+
+/* ----------------------  Footer Bio/Contact --------------------- */
+
+#footer
+{
+	background-color: rgb(54,96,141);
+	color: white;
+}
+
+#fl h2
+{
+	padding: 15px;
+	padding-left: 0;
+	padding-top: 0;
+	display: inline-block;
+}
+
+#fr h2
+{
+	padding: 15px;
+	padding-left: 0;
+	padding-top: 0;
+}
+
+#lesson_sub
+{
+	background-color: rgb(63,173,230);
+	text-align: center;
+	color: white;
+	border: rgb(13,137,201) thin solid;
+	border-radius: 7px;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	width: 100%;
+}
+
+
+
+#bio
+{
+	margin-top: 60px;
+	margin-bottom: 50px;
+	padding-left: 15px;
+}
+
+
+#copyright
+{
+	background-color: rgb(36,71,114);
+	padding: 10px;
+	text-align: center;
+	font-size: 12px;
+}
+
+
+
+/*------------------   About Page  ---------------------------*/
+
+#article_wrap
+{
+	margin-bottom: 50px;
+}
+
+#sub_nav
+{
+	
+}
+
+#sub_nav nav ol
+{
+	padding: 10px;
+	margin-bottom:  0;
+	background-color: white;
+}
+
+
+
+#body_header
+{
+	margin-top: 0;
+	margin-bottom: 0;
+	background-color: rgb(56,95,138);
+	color: white;
+	padding: 0;
+}
+
+#body_header h1
+{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 10px;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+
+#sidebar_nav
+{
+	color: rgb(60,103,150);
+	padding-left: 0;
+	padding-right: 0;
+	margin-top: 20px;
+}
+
+#sidebar_nav ul
+{
+	display: table;
+	padding-left: 10px;
+}
+
+#sidebar_nav ul li
+{
+	border-bottom: rgb(60,103,150) thin solid;
+	padding: 5px;
+	padding-right: 20px;
+	opacity: 0.4;
+	list-style: none;
+}
+
+#sidebar_nav ul li:hover
+{
+	opacity: 1;
+}
+
+#sidebar_nav ul li a
+{
+	text-decoration: none;
+}
+
+
+/* ----------------------  Sidebar --------------------- */
+
+
+.sidebar_widget_border0
+{
+	border-radius: 0;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.sidebar_widget2
+{
+	border-radius: 0;
+	text-align: left;
+	margin-top: 20px;
+}
+
+.sidebar_widget2 div.panel-body ul li
+{
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+#sidebar_widget1
+{
+	background-color: rgb(228,238,242);
+	padding-top: 15px;
+	padding-bottom: 25px;
+}
+
+#sidebar_widget1 div
+{
+	background-color: rgb(228,238,242);
+}
+
+#sidebar_widget1 div h3
+{
+	color: rgb(59,101,147);
+	font-size: 20px;
+}
+
+
+
+
+
+/* -----------------  FAQ Page ----------------- */
+
+#faq_content
+{
+	margin-top: 20px;
+	margin-bottom: 50px;
+	color: rgb(60,103,150);
+}
+
+#faq_content h1
+{
+	
+}
+
+
+
+/* ----------- Sign Up Page -------------------- */
+
+
+#form_panel
+{
+	margin-top: 50px;
+	margin-bottom: 50px;
+	border-radius: 0;
+}
+
+#form_panel div.panel-body
+{
+	padding-bottom: 0;
+}
+
+#form_panel div.panel-heading
+{
+	text-align: center;
+	background-color: rgb(244,244,244);
+	color: rgb(60,103,150);
+}
+
+#form_panel div.panel-heading h2
+{
+	padding: 2px;
+	padding-top: 15px;
+	margin: 0;
+	font-size: 40px;
+}
+
+#form_panel div.panel-heading h4
+{
+	padding: 2px;
+	padding-bottom: 15px;
+	margin: 0;
+	font-size: 14px;
+}
+
+#form_panel div.panel-body form
+{
+	padding-left: 35px;
+}
+
+#fb_login
+{
+	font-size: 20px;
+	padding-right: 0;
+	margin-bottom: 25px;
+}
+
+#form_panel div.panel-body form label
+{
+	padding-right: 0;
+}
+
+#fb_login, #form_panel div.panel-body form label
+{
+	text-align: left;
+	color: rgb(106,107,109);
+}
+
+#form_panel div.panel-body form input
+{
+	background-color: rgb(246,245,245);
+	border-radius: 0;
+}
+
+
+
+/* ----------------------  Portfolio Page -----------------------*/
+
+
+
+
+#banner
+{
+	background-color: rgb(69,112,159);
+	color: white;
+	height: 400px;
+}
+
+#banner div.container div
+{
+	margin: 80px;
+}
+
+#banner div.container div h3
+{
+	margin-top: 0;
+}
+
+#wrapper
+{
+	display: inline-block;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	color: rgb(60,103,150);
+}
+
+#wrapper h3
+{
+	display: table;
+}
+
+#wrapper div.col-md-2 /* rmve -col */
+{
+	height: 150px;
+	width: 150px;
+	background-color: grey;
+}
+
+
+
+
+/* -------------------- Trading Secret Page ----------------------------- */
+
+
+#banner_btn
+{
+	font-size: 26px;
+	background-color: rgb(63,173,230);
+	text-align: center;
+	color: white;
+	border: rgb(13,137,201) thin solid;
+	border-radius: 7px;
+	padding: 7px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-top: 30px;
+}
+
+
+#header_secret
+{
+	color: rgb(54,96,141);
+	text-align: center;
+	padding-top: 35px;
+	padding-bottom: 35px;
+	border-bottom: rgb(199,199,199) thin solid;
+	margin-bottom: 50px;
+}
+
+#header_secret h2, #header_secret h3
+{
+	margin: 0;
+}
+
+#icons
+{
+	text-align: center;
+	display: table;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#icons div.col-md-2 /* rmve -col */
+{
+	margin: 25px;
+}
+
+#icon_content
+{
+	display: table;
+	color: rgb(106,107,109);
+	mmargin-top: 50px;
+	margin-bottom: 50px;
+}
+
+
+
+
+
+/* ------------------------ Memberships Page ------------------------------ */
+
+#header_mem
+{
+	color: rgb(54,96,141);
+	text-align: center;
+	padding-top: 35px;
+	padding-bottom: 35px;
+	margin-bottom: 50px;
+}
+
+#header_mem h1, #header_mem h3
+{
+	margin: 0;
+}
+
+#package_table
+{
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+#package_table tr td span
+{
+	color: rgb(128,187,0);
+}
+
+.left{text-align: left;}
+
+
+
+
+
+
+
+
+
+
+
+
+
